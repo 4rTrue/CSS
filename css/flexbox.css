@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*1- O container flex se comporta da mesma forma de um container
+block, mas os filhos do container vão ter uma propriedade doida*/
+.flex-container {
+    /*2- usar isso faz com que os filhos desse container possuam
+    a height do pai, mas fiquem um ao lado do outro.*/
+    display: flex;
+    /*3- Usar o display flex nos dá de brinde 3 atributos para 
+    configurar: flex-direction, align-items e justify-content*/
+    flex-direction: row; /*Row o columns - setta o main axis e um cross axis*/
+    justify-content: flex-start; /*alinha os itens no eixo principal, flex-end,center,space-around*/
+    align-items: flex-start; /*alinha no eixo perpendicular: stretch->esticar*/
+    background: yellow;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 960px;
+    /*4- Basicamente  controlamos os filhos do container por aqui*/
+}
+.flex-item  {
+    background-color: red;
+    width: 320px;
+    text-align: center;
+    border-radius: 5px;
+}
