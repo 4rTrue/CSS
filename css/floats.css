@@ -1,14 +1,12 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    box-sizing: border-box;
 }
 .grid::after{
     content: '';
     display: block;
     clear: both;
-}
-.grid {
-    border: 1px black solid;
 }
 .grid .col {   
     width: 33.33%;
@@ -20,4 +18,18 @@
     width: 100%;
     height: 100%;
     background: red;
+}
+
+/*AQUI É UM DESKTOP FIRST, ESTAMOS PRIORIZANDO DESKTOPS NO 
+NOSSO SISTEMA*/
+@media all and (max-width:320px){
+    .grid .col{
+        width: 100%;
+    }
+}
+
+@media all and (min-width:321px) and (max-width:768px){
+    .grid .col {
+        width: 50%;
+    }
 }
