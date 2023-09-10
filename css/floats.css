@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+.grid::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid {
+    border: 1px black solid;
+}
 .grid .col {
     display: block;
     width: 300px;
