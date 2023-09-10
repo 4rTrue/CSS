@@ -11,18 +11,20 @@ block, mas os filhos do container vão ter uma propriedade doida*/
     display: flex;
     /*3- Usar o display flex nos dá de brinde 3 atributos para 
     configurar: flex-direction, align-items e justify-content*/
-    flex-direction: row; /*Row o columns - setta o main axis e um cross axis*/
-    justify-content: flex-start; /*alinha os itens no eixo principal, flex-end,center,space-around*/
-    align-items: flex-start; /*alinha no eixo perpendicular: stretch->esticar*/
-    background: yellow;
-    flex-wrap: wrap;
-    height: 600px;
-    width: 960px;
+    justify-content: space-between;
+    flex-flow:row wrap;   
+    background-color: yellow;
     /*4- Basicamente  controlamos os filhos do container por aqui*/
 }
 .flex-item  {
     background-color: red;
-    width: 320px;
+    flex-grow: 1;
+    flex-basis: 320px;
+    margin-bottom: 2%;
+    height: 200px;
     text-align: center;
     border-radius: 5px;
+}
+.flex-item:nth-child(2){
+    flex:0 1 320px;
 }
