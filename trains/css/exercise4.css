@@ -1,0 +1,26 @@
+.header {
+    border: 1px solid red;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(0, 202, 101);
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.container .side {
+    width: 30%;
+    background-color: bisque;
+    min-height: 100px;
+}
+.container .main {
+    width: 70%;
+    min-height: 100px;
+    border: 1px red solid;
+}
