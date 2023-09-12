@@ -8,6 +8,20 @@
 
 .menu {
     display: flex;
+    background-color: black;
+}
+
+.menu a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
 }
 
 .container {
