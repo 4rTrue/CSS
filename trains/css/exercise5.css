@@ -1,4 +1,11 @@
 .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    max-width: 900;
+    border: 1px solid black;
+}
+.container .cell {
+    background-color: tomato;
+    min-height: 300px;
 }
