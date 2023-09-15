@@ -2,10 +2,13 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: 0 auto;
-    max-width: 900;
+    max-width: 900px;
     border: 1px solid black;
+    gap: 10px;
 }
 .container .cell {
     background-color: tomato;
-    min-height: 300px;
+    padding: 100px;
+    border-radius: 3px  ;
+    text-align: center;
 }
