@@ -12,3 +12,7 @@
     border-radius: 3px  ;
     text-align: center;
 }
+
+.container .cell:hover {
+    background-color: aqua;
+}
