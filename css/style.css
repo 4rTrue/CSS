@@ -1,0 +1,13 @@
+header {
+    border: 1px solid grey;
+    padding: 15px 30px;
+}
+article {
+    background-color: orange;
+}
+section {
+    border: 1px solid white;
+}
+aside {
+    background: blue;
+}
